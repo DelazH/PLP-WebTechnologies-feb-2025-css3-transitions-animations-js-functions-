@@ -1,0 +1,43 @@
+/* Base styles with transitions */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  margin: 50px auto;
+  transition: transform 0.3s ease;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.bounce {
+  animation: bounce 0.5s ease;
+}
+
+/* Button hover transition */
+#themeToggle {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#themeToggle:hover {
+  background-color: #ddd;
+}
